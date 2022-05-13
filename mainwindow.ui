@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>699</width>
+    <height>388</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QTextEdit" name="textEdit"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>699</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionNew"/>
+    <addaction name="actionOpen"/>
+    <addaction name="separator"/>
+    <addaction name="actionSave"/>
+    <addaction name="actionSave_as"/>
+   </widget>
+   <widget class="QMenu" name="menuEdit">
+    <property name="title">
+     <string>Edit</string>
+    </property>
+    <addaction name="actionCopy"/>
+    <addaction name="actionPaste"/>
+    <addaction name="separator"/>
+    <addaction name="actionRedo"/>
+    <addaction name="actionUndo"/>
+   </widget>
+   <widget class="QMenu" name="menuOptions">
+    <property name="title">
+     <string>Options</string>
+    </property>
+    <addaction name="actionMerge"/>
+    <addaction name="actionNum_of_Words"/>
+    <addaction name="actionNum_of_characters"/>
+    <addaction name="actionNum_of_lines"/>
+    <addaction name="actionSearch_a_word"/>
+    <addaction name="actioncount_the_times_the_word_exist"/>
+    <addaction name="separator"/>
+    <addaction name="actionEncrypt"/>
+    <addaction name="actionDecrypt"/>
+    <addaction name="separator"/>
+    <addaction name="actionEmpty_the_file"/>
+    <addaction name="actionAdd_Text"/>
+    <addaction name="separator"/>
+    <addaction name="actionAll_Upper"/>
+    <addaction name="actionAll_Lower"/>
+    <addaction name="actionFirst_Upper"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuEdit"/>
+   <addaction name="menuOptions"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionNew"/>
+   <addaction name="actionOpen"/>
+   <addaction name="actionSave"/>
+   <addaction name="actionSave_as"/>
+   <addaction name="actionCopy"/>
+   <addaction name="actionPaste"/>
+   <addaction name="actionRedo"/>
+   <addaction name="actionUndo"/>
+  </widget>
+  <action name="actionNew">
+   <property name="icon">
+    <iconset resource="reso.qrc">
+     <normaloff>:/pref/image/add-file.png</normaloff>:/pref/image/add-file.png</iconset>
+   </property>
+   <property name="text">
+    <string>New</string>
+   </property>
+  </action>
+  <action name="actionOpen">
+   <property name="icon">
+    <iconset resource="reso.qrc">
+     <normaloff>:/pref/image/folder.png</normaloff>:/pref/image/folder.png</iconset>
+   </property>
+   <property name="text">
+    <string>Open</string>
+   </property>
+  </action>
+  <action name="actionSave">
+   <property name="icon">
+    <iconset resource="reso.qrc">
+     <normaloff>:/pref/image/save.png</normaloff>:/pref/image/save.png</iconset>
+   </property>
+   <property name="text">
+    <string>Save</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="actionSave_as">
+   <property name="icon">
+    <iconset resource="reso.qrc">
+     <normaloff>:/pref/image/save as-file.png</normaloff>:/pref/image/save as-file.png</iconset>
+   </property>
+   <property name="text">
+    <string>Save as</string>
+   </property>
+  </action>
+  <action name="actionCopy">
+   <property name="icon">
+    <iconset resource="reso.qrc">
+     <normaloff>:/pref/image/copy.png</normaloff>:/pref/image/copy.png</iconset>
+   </property>
+   <property name="text">
+    <string>Copy</string>
+   </property>
+  </action>
+  <action name="actionPaste">
+   <property name="icon">
+    <iconset resource="reso.qrc">
+     <normaloff>:/pref/image/paste.png</normaloff>:/pref/image/paste.png</iconset>
+   </property>
+   <property name="text">
+    <string>Paste</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+V</string>
+   </property>
+  </action>
+  <action name="actionRedo">
+   <property name="icon">
+    <iconset resource="reso.qrc">
+     <normaloff>:/pref/image/redo.png</normaloff>:/pref/image/redo.png</iconset>
+   </property>
+   <property name="text">
+    <string>Redo</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Y</string>
+   </property>
+  </action>
+  <action name="actionUndo">
+   <property name="icon">
+    <iconset resource="reso.qrc">
+     <normaloff>:/pref/image/undo.png</normaloff>:/pref/image/undo.png</iconset>
+   </property>
+   <property name="text">
+    <string>Undo</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Z</string>
+   </property>
+  </action>
+  <action name="actionMerge">
+   <property name="icon">
+    <iconset resource="reso.qrc">
+     <normaloff>:/pref/image/merge.png</normaloff>:/pref/image/merge.png</iconset>
+   </property>
+   <property name="text">
+    <string>Merge</string>
+   </property>
+  </action>
+  <action name="actionNum_of_Words">
+   <property name="icon">
+    <iconset resource="reso.qrc">
+     <normaloff>:/pref/image/abacus.png</normaloff>:/pref/image/abacus.png</iconset>
+   </property>
+   <property name="text">
+    <string>Num. of Words</string>
+   </property>
+  </action>
+  <action name="actionNum_of_characters">
+   <property name="icon">
+    <iconset resource="reso.qrc">
+     <normaloff>:/pref/image/abacus.png</normaloff>:/pref/image/abacus.png</iconset>
+   </property>
+   <property name="text">
+    <string>Num. of characters</string>
+   </property>
+  </action>
+  <action name="actionNum_of_lines">
+   <property name="icon">
+    <iconset resource="reso.qrc">
+     <normaloff>:/pref/image/abacus.png</normaloff>:/pref/image/abacus.png</iconset>
+   </property>
+   <property name="text">
+    <string>Num. of lines</string>
+   </property>
+  </action>
+  <action name="actionSearch_a_word">
+   <property name="icon">
+    <iconset resource="reso.qrc">
+     <normaloff>:/pref/image/loupe.png</normaloff>:/pref/image/loupe.png</iconset>
+   </property>
+   <property name="text">
+    <string>Search a word</string>
+   </property>
+  </action>
+  <action name="actioncount_the_times_the_word_exist">
+   <property name="icon">
+    <iconset resource="reso.qrc">
+     <normaloff>:/pref/image/abacus.png</normaloff>:/pref/image/abacus.png</iconset>
+   </property>
+   <property name="text">
+    <string>count the times the word exist</string>
+   </property>
+  </action>
+  <action name="actionEncrypt">
+   <property name="icon">
+    <iconset resource="reso.qrc">
+     <normaloff>:/pref/image/encryption.png</normaloff>:/pref/image/encryption.png</iconset>
+   </property>
+   <property name="text">
+    <string>Encrypt</string>
+   </property>
+  </action>
+  <action name="actionDecrypt">
+   <property name="icon">
+    <iconset resource="reso.qrc">
+     <normaloff>:/pref/image/decryption.png</normaloff>:/pref/image/decryption.png</iconset>
+   </property>
+   <property name="text">
+    <string>Decrypt</string>
+   </property>
+  </action>
+  <action name="actionEmpty_the_file">
+   <property name="icon">
+    <iconset resource="reso.qrc">
+     <normaloff>:/pref/image/trash.png</normaloff>:/pref/image/trash.png</iconset>
+   </property>
+   <property name="text">
+    <string>Empty the file</string>
+   </property>
+  </action>
+  <action name="actionAdd_Text">
+   <property name="icon">
+    <iconset resource="reso.qrc">
+     <normaloff>:/pref/image/add-text.png</normaloff>:/pref/image/add-text.png</iconset>
+   </property>
+   <property name="text">
+    <string>Add Text</string>
+   </property>
+  </action>
+  <action name="actionAll_Upper">
+   <property name="icon">
+    <iconset resource="reso.qrc">
+     <normaloff>:/pref/image/letter-u.png</normaloff>:/pref/image/letter-u.png</iconset>
+   </property>
+   <property name="text">
+    <string>All Upper</string>
+   </property>
+  </action>
+  <action name="actionAll_Lower">
+   <property name="icon">
+    <iconset resource="reso.qrc">
+     <normaloff>:/pref/image/letter-l.png</normaloff>:/pref/image/letter-l.png</iconset>
+   </property>
+   <property name="text">
+    <string>All Lower</string>
+   </property>
+  </action>
+  <action name="actionFirst_Upper">
+   <property name="icon">
+    <iconset resource="reso.qrc">
+     <normaloff>:/pref/image/letter-f.png</normaloff>:/pref/image/letter-f.png</iconset>
+   </property>
+   <property name="text">
+    <string>First Upper</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="reso.qrc"/>
+ </resources>
+ <connections/>
+</ui>

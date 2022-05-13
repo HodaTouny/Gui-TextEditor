@@ -1,0 +1,23 @@
+<RCC>
+    <qresource prefix="/pref">
+        <file>image/add-file.png</file>
+        <file>image/copy.png</file>
+        <file>image/folder.png</file>
+        <file>image/paste.png</file>
+        <file>image/redo.png</file>
+        <file>image/save as-file.png</file>
+        <file>image/save.png</file>
+        <file>image/trash.png</file>
+        <file>image/undo.png</file>
+        <file>image/options.png</file>
+        <file>image/loupe.png</file>
+        <file>image/merge.png</file>
+        <file>image/abacus.png</file>
+        <file>image/add-text.png</file>
+        <file>image/decryption.png</file>
+        <file>image/encryption.png</file>
+        <file>image/letter-l.png</file>
+        <file>image/letter-u.png</file>
+        <file>image/letter-f.png</file>
+    </qresource>
+</RCC>
